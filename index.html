@@ -1,1 +1,92 @@
-Coba
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pondok Nikah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pondok Nikah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel" style="background-color: rgba(0,0,0,0.6);">
+                <div class="offcanvas-header text-bg-dark">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Pondok Nikah</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fitur">Fitur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#caraKerja">Cara Kerja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tema">Tema</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#harga">Harga</a>
+                        </li>
+                        <li class="nav-item" id="masuk">
+                            <a class="nav-link" href="#">Masuk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="btn-buat" href="#">Buat Sekarang</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="full"
+        style="background-color: cornflowerblue;background-image: url(assets/img/bg-1.png);background-position: center;background-size: cover;">
+        <div class="container full">
+            <div class="row full py-5">
+                <div class="left-content col-sm-12 col-xl-6 text-white align-self-center py-5">
+                    <h1 class="fw-bold" style="text-shadow: 1px 1px 1px black;">
+                        Undangan
+                        Pernikahan Online</h1>
+                    <p>
+                        Saatnya beralih ke undangan digital.
+                        Proses cepat, 10 menit undangan langsung jadi.
+                    </p>
+                    <a class="btn btn-info text-white" href="#">Buat Sekarang <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="align-self-center col-sm-12 col-xl-6 py-5">
+                    <img class="w-75" src="assets/img/home-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fitur" class="full">
+        <div class="container full">
+            <div class="row full py-5">
+                <div class="col-sm-12 py-5 text-center">
+                    <h3>Fitur Unggulan Undangan Online</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

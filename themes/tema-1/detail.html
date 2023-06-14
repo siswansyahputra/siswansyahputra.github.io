@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pondok Nikah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Mengatur waktu akhir perhitungan mundur
+        var countDownDate = new Date("Dec 19, 2023 10:00:00").getTime();
+
+        // Memperbarui hitungan mundur setiap 1 detik
+        var x = setInterval(function () {
+
+            // Untuk mendapatkan tanggal dan waktu hari ini
+            var now = new Date().getTime();
+
+            // Temukan jarak antara sekarang dan tanggal hitung mundur
+            var distance = countDownDate - now;
+
+            // Perhitungan waktu untuk hari, jam, menit dan detik
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Keluarkan hasil dalam elemen
+            document.getElementById("hari").innerHTML = days;
+            document.getElementById("jam").innerHTML = hours;
+            document.getElementById("menit").innerHTML = minutes;
+            document.getElementById("detik").innerHTML = seconds;
+
+            // Jika hitungan mundur selesai, tulis beberapa teks 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+        function play() {
+            let audio = document.getElementById("audio");
+            audio.play();
+            document.getElementById("pause").style.display = "inline-block";
+            document.getElementById("play").style.display = "none";
+        }
+        function pause() {
+            let audio = document.getElementById("audio");
+            audio.pause();
+            document.getElementById("pause").style.display = "none";
+            document.getElementById("play").style.display = "inline-block";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row justify-content-center fixed-top">
+            <div class="col-sm-12 col-xl-4">
+                <audio id="audio" class="opacity-75" autoplay loop>
+                    <source src="audio/Ridjaal Ahmed Wedding Nasheed.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div id="home" class="full container-fluid text-white" style="background-color: #037CA9;">
+        <div class="row align-items-center h-100"
+            style="background-image: url(img/bg-1.png);background-size: cover;background-repeat: no-repeat;background-position: center;">
+            <div class="col-sm-12 text-center">
+                <h3 data-aos="flip-up">~ THE WEDDING OF ~</h3>
+                <img data-aos="zoom-in" src="img/sandy-millar-8vaQKYnawHw-unsplash.jpg" class="rounded-circle shadow"
+                    width="200px" height="200px" alt="">
+                <p data-aos="zoom-in-up">
+                <h1 data-aos="zoom-out" data-aos-duration="3000" style="font-family: GreatVibes-Regular;"
+                    class="text-shadow">Cantik & Tampan
+                </h1>
+                </p>
+                <p data-aos="zoom-in-right">Sabtu, 31 Desember 2023</p>
+                <div data-aos="zoom-out-up">
+                    <div class="d-inline-block m-1">
+                        <h3 id="hari" class="text-bg-warning px-3 py-1"></h3>
+                        Days
+                    </div>
+                    <div class="d-inline-block m-1">
+                        <h3 id="jam" class="text-bg-light px-3 py-1"></h3>
+                        Hours
+                    </div>
+                    <div class="d-inline-block m-1">
+                        <h3 id="menit" class="text-bg-warning  px-3 py-1"></h3>
+                        Minutes
+                    </div>
+                    <div class="d-inline-block m-1">
+                        <h3 id="detik" class="text-bg-light  px-3 py-1"></h3>
+                        Seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mempelai" class="full container-fluid" style="">
+        <div class="row align-items-center h-100"
+            style="background-image: url(img/bg-1.png);background-size: cover;background-repeat: no-repeat;background-position: center;">
+            <div class="col-sm-12 text-center py-2 px-4">
+                <div class="row align-items-center rounded-4">
+                    <div class="col-sm-12 py-2">
+                        <div>
+                            <img data-aos="fade-down" data-aos-duration="3000" class="w-50 mb-3"
+                                src="img/ornament-1.png" alt="">
+                        </div>
+                        <i data-aos="zoom-out" data-aos-duration="3000" class="fs-6 font-style1">
+                            Assalamu'alaikum Warrahmatullahi Wabarrakatuh
+                        </i>
+                        <p data-aos="zoom-in" data-aos-duration="3000">
+                            <small>Maha suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan,Ya Allah
+                                perkenankanlah pernikahan putra-putri kami :</small>
+                        </p>
+                        <h1 data-aos="fade-down" data-aos-duration="3000" class="font-style2 text-danger">Si Cantik
+                            Putri</h1>
+                        <p data-aos="fade-down" data-aos-duration="3000">
+                            <small>
+                                Putri Pertama dari Bapak Si Polan dan Ibu Si
+                                Pulan
+                            </small>
+                        </p>
+                        <p data-aos="zoom-in-up" class="fst-italic">dengan</p>
+                        <h1 data-aos="fade-up" data-aos-duration="3000" class="font-style2 text-danger">Si Tampan Putra
+                        </h1>
+                        <p data-aos="fade-up" data-aos-duration="3000">
+                            <small>
+                                Putra Pertama dari Bapak Si Polan dan Ibu Si
+                                Pulan
+                            </small>
+                        </p>
+                        <img data-aos="fade-up" data-aos-duration="3000" class="w-50" src="img/ornament-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="acara" class="full container-fluid text-white" style="background-color: #037CA9;">
+        <div class="row h-100 align-items-center m-auto py-5"
+            style="background-image: url(img/bg-1.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="col-sm-12 text-center rounded">
+                <h1 data-aos="zoom-out" data-aos-duration="2000" class="font-style2">
+                    ~ Akad Nikah ~
+                </h1>
+                <p data-aos="zoom-in" data-aos-duration="2000">
+                    Jum'at, 02 Juni 2023<br>
+                    Pukul : 08.00 Wib s.d Selesai<br>
+                    <b>KEDIAMAN MEMPELAI WANITA</b><br>
+                    Jl. Bunga Mawar No. 11A, Kel. Cinta Bersama, Kec. Pondok Setia
+                </p>
+                <img data-aos="flip-left" data-aos-duration="1000" class="w-50 m-auto" src="img/ornament-3.png" alt="">
+                <h1 data-aos="zoom-out" data-aos-duration="2000" class="font-style2">
+                    ~ Resepsi Pernikahan ~
+                </h1>
+                <p data-aos="zoom-in" data-aos-duration="2000">
+                    Ahad, 04 Juni 2023<br>
+                    Pukul : 10.00 Wib s.d Selesai<br>
+                    <b>KEDIAMAN MEMPELAI WANITA</b><br>
+                    Jl. Bunga Mawar No. 11A, Kel. Cinta Bersama, Kec. Pondok Setia
+                </p>
+                <a class="btn btn-outline-warning" href="https://goo.gl/maps/X6oESVdq9JzCfy8z8" target="_blank"><i
+                        class="bi bi-geo-alt"></i> View Map</a>
+            </div>
+        </div>
+    </div>
+    <div id="gallery" class="container-fluid" style="">
+        <div class="row h-100 align-items-center">
+            <div class="col-sm-12 py-3 text-center">
+                <h1 class="font-style2">~ Gallery ~</h1>
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/alvin-mahmudov-9_XfcBxf_uo-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/drew-coffman-llWjwo200fo-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/jeremy-wong-weddings-464ps_nOflw-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/photos-by-lanty-O38Id_cyV4M-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/samantha-gades-x40Q9jrEVT0-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/sandy-millar-8vaQKYnawHw-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/alvin-mahmudov-9_XfcBxf_uo-unsplash.jpg" alt="">
+                <img data-aos="flip-left" data-aos-duration="1000" class="rounded-4 w-25 m-2"
+                    src="img/gallery/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="kisah" class="continer-fluid">
+        <div class="row h-100 align-items-center">
+            <div data-aos="zoom-out" data-aos-duration="3000" class="col-sm-12 col-xl-6 m-auto text-center p-3">
+                <h1 class="font-style2">~ Kisah Cinta Kami ~</h1>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active border border-warning">
+                            <img class="w-100" src="img/gallery/alvin-mahmudov-9_XfcBxf_uo-unsplash.jpg" alt="">
+                            <h3 class="font-style1">Pertemuan Pertama</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit unde,
+                                exercitationem, sequi tempore earum minus dignissimos quod fugit beatae perspiciatis
+                                eaque distinctio sunt rerum natus cupiditate, magni doloribus rem.</p>
+                        </div>
+                        <div class="carousel-item border border-warning">
+                            <img class="w-100" src="img/gallery/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg" alt="">
+                            <h3 class="font-style1">Proses Lamaran</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit unde,
+                                exercitationem, sequi tempore earum minus dignissimos quod fugit beatae perspiciatis
+                                eaque distinctio sunt rerum natus cupiditate, magni doloribus rem.</p>
+                        </div>
+                        <div class="carousel-item border border-warning">
+                            <img class="w-100" src="img/gallery/drew-coffman-llWjwo200fo-unsplash.jpg" alt="">
+                            <h3 class="font-style1">Proses Akad Nikah</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio suscipit unde,
+                                exercitationem, sequi tempore earum minus dignissimos quod fugit beatae perspiciatis
+                                eaque distinctio sunt rerum natus cupiditate, magni doloribus rem.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ucapan" class="container-fluid" style="">
+        <div class="row h-100 align-items-center">
+            <div class="col-sm-12 py-3">
+                <div class="row">
+                    <div class="col-sm-12 col-xl-4 mb-3 m-auto">
+                        <h1 class="font-style2">~ Ucapan ~</h1>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nama" placeholder="nama lengkap">
+                            <label for="nama">Nama Lengkap</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="ucapan atau do'a" id="ucapan"
+                                style="height: 100px;"></textarea>
+                            <label for="ucapan">Ucapan atau do'a</label>
+                        </div>
+                        <div class="form-floating mb-1">
+                            <select class="form-select" id="kehadiran" aria-label="Konfirmasi kehadiran">
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak-hadir">Tidak Hadir</option>
+                            </select>
+                            <label for="kehadiran">Konfirmasi kehadiran</label>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-info">Kirim</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4 m-auto overflow-auto" style="height: 300px;">
+                        <div class="alert alert-light" role="alert">
+                            <h5 class="alert-heading font-style2">Kerabat Dekat</h5>
+                            <hr>
+                            <p class="mb-0 font-style1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus minima vitae beatae
+                                ullam doloremque reprehenderit?
+                            </p>
+                        </div>
+                        <div class="alert alert-light" role="alert">
+                            <h5 class="alert-heading font-style2">Kerabat Dekat</h5>
+                            <hr>
+                            <p class="mb-0 font-style1">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus minima vitae beatae
+                                ullam doloremque reprehenderit?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hadiah" class="container-fluid" style="">
+                <div class="row h-100 align-items-center">
+                    <div class="col-sm-12 col-xl-8 my-5 m-auto text-center">
+                        <h1 class="font-style2">~ Beri Hadiah ~</h1>
+                        <p>Tanpa mengurangi rasa hormat, bagi rekan-rekan dan sahabat yang hendak memberikan tanda kasih
+                            untuk kami, dapat melalui nomor rekening atau dompet digital dibawah ini</p>
+                        <div class="row">
+                            <div class="col-sm-12 d-flex justify-content-between">
+                                <div>
+                                    <img style="height: 60px;" src="img/bsi.png" alt="">
+                                    <p>
+                                        Bank Syariah Indonesia (BSI)<br>
+                                        <b class="text-primary">No. Rek : 1041890734</b><br>
+                                        An. Siswan Syahputra
+                                    </p>
+
+                                </div>
+                                <div>
+                                    <img style="height: 60px;" src="img/logo_bri.jpg" alt="">
+                                    <p>
+                                        Bank Rakyat Indonesia (BRI)<br>
+                                        <b class="text-primary">No. Rek : 1041890734</b><br>
+                                        An. Siswan Syahputra
+                                    </p>
+
+                                </div>
+                                <div>
+                                    <img style="height: 60px;" src="img/logo_dana.jpg" alt="">
+                                    <p>
+                                        DANA<br>
+                                        <b class="text-primary">No. Hp : 083197444205</b><br>
+                                        An. Siswan Syahputra
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="widget-side" class="container">
+        <div class="row fixed-bottom" style="margin-bottom: 70px;margin-right:15px">
+            <div class="col-sm-12 d-flex justify-content-end mb-2">
+                <a href="#hadiah" class="btn shadow text-bg-white fs-3 rounded-circle bg-white">
+                    <i class="bi bi-gift-fill"></i>
+                </a>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-end mb-2">
+                <a href="#ucapan" class="btn shadow text-bg-white fs-3 rounded-circle bg-white">
+                    <i class="bi bi-chat-dots-fill"></i>
+                </a>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-end ">
+                <button id="pause" class="btn shadow text-bg-white fs-3 rounded-circle bg-white" onclick="pause()"
+                    style="display: inline-block;">
+                    <i class="bi bi-pause"></i>
+                </button>
+                <button id="play" class="btn shadow text-bg-white fs-3 rounded-circle bg-white" onclick="play()"
+                    style="display: none;">
+                    <i class="bi bi-play"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="widget-bottom" class="container text-center">
+        <div class="row justify-content-center fixed-bottom">
+            <div class="col-sm-12 col-xl-4 rounded-pill dark-transparant">
+                <a class="text-decoration-none d-inline-block m-1 text-white" href="#home">
+                    <i class="fs-4 bi bi-house-heart-fill"></i>
+                    <br><small>Home</small>
+                </a>
+                <a class="text-decoration-none d-inline-block m-1 text-white" href="#mempelai">
+                    <i class="fs-4 bi bi-hearts"></i>
+                    <br><small>Mempelai</small>
+                </a>
+                <a class="text-decoration-none d-inline-block m-1 text-white" href="#acara">
+                    <i class="fs-4 bi bi-calendar-heart"></i>
+                    <br><small>Acara</small>
+                </a>
+                <a class="text-decoration-none d-inline-block m-1 text-white" href="#gallery">
+                    <i class="fs-4 bi bi-images"></i>
+                    <br><small>Gallery</small>
+                </a>
+                <a class="text-decoration-none d-inline-block m-1 text-white" href="#kisah">
+                    <i class="fs-4 bi bi-arrow-through-heart-fill"></i>
+                    <br><small>Kisah</small>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init(); 
+    </script>
+</body>
+
+</html>

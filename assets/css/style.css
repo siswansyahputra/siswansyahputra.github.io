@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+html,
+body,
+.full {
+  height: 100%;
+  box-sizing: border-box;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #masuk{
+    margin-left:40px;
+  }
+  #btn-buat{
+    background-color: aquamarine;
+    border-radius: 30px;
+    color:black;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  #btn-buat:hover{
+    background-color: aqua;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
