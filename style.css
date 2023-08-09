@@ -1,0 +1,90 @@
+:root{
+    --shadow:0 2px 2px rgb(0 0 0/0.5);
+    --warna:brown;
+}
+body{
+    font-size:1rem;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 2000px;
+}
+.mynavbar{
+    background-color: rgba(255, 255, 255,0.5)!important;
+    backdrop-filter: blur(4px);
+}
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+.hero::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg_kaputama.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.hero::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 128, 127,0.8);
+    z-index: -1;
+}
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+.hero h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.hero span{
+    display: block;
+}
+.hero h1, .hero span,.hero p{
+    text-shadow: var(--shadow);
+}
+.hero a{
+    background-color:var(--warna);
+    color:white;
+}
+.hero a:hover{
+    background-color: white;
+    color:var(--warna);
+}
+
+/* Mobile S-320px */
+@media (min-width: 320px) {
+    .navbar-toggler{
+        border:none;
+     }     
+    .sticky-top{
+        overflow: hidden;
+    }
+}
+/* Mobile M-375px */
+@media (min-width: 375px) {
+    
+}
+/* Mobile L-425px */
+@media (min-width: 425px) {
+
+}
+/* Tablet - 768px */
+@media (min-width: 768px) {
+
+}
+/* Laptop - 1024px */
+@media (min-width: 1024px) {
+
+}
+/* Laptop L - 1440px */
+@media (min-width: 1440px) {
+
+}
